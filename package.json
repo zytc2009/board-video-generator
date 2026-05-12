@@ -1,0 +1,14 @@
+{
+  "name": "board-video-generator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "node src/cli.js",
+    "test": "node --test",
+    "check": "node --check src/cli.js && node --check src/parser/parseBoardMarkdown.js && node --check src/render/captureFrames.js && node --check src/ffmpeg/encodeVideo.js"
+  },
+  "dependencies": {
+    "puppeteer": "^23.11.1"
+  }
+}

@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 1920px;
+  height: 1080px;
+  margin: 0;
+  overflow: hidden;
+  background: #f7f4ec;
+}
+
+#board {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background:
+    linear-gradient(rgba(55, 92, 150, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(55, 92, 150, 0.07) 1px, transparent 1px),
+    #fbfaf5;
+  background-size: 48px 48px;
+  color: #18212f;
+  font-family: "Segoe Print", "Comic Sans MS", "Segoe UI", sans-serif;
+}
+
+#title {
+  position: absolute;
+  left: 96px;
+  top: 54px;
+  font-size: 42px;
+  color: #59616f;
+}
+
+#layer,
+#svg-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.text-action {
+  position: absolute;
+  white-space: pre;
+  overflow: hidden;
+  color: #172033;
+}
+
+.write-action {
+  font-size: 56px;
+  line-height: 1.15;
+}
+
+.formula-action {
+  font-family: "Cambria Math", "Times New Roman", serif;
+  font-size: 72px;
+  line-height: 1.1;
+  color: #111827;
+}
+
+.stroke-action {
+  fill: none;
+  stroke: #172033;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
